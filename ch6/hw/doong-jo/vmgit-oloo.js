@@ -1,8 +1,8 @@
 // vmgit - OLOO style
 // 주어진 예제에서 `작동위임`으로 수정할만한 부분을 찾지 못함.
 
-var readline = require("readline");
-var r = readline.createInterface({
+const readline = require("readline");
+const r = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
@@ -297,7 +297,7 @@ r.on("line", function(command) {
     if (command === "quit") {
         r.close();
     }
-    var cli = command.split(" ");
+    const cli = command.split(" ");
     switch (cli[0]) {
         case "init":
             if (cli.length > 1) vminit(cli[1]);
@@ -324,7 +324,7 @@ r.on("line", function(command) {
             break;
         case "commit":
             if (local.selectedRepository > -1) {
-                var temp = [...cli];
+                const temp = [...cli];
                 temp.splice(0, 1);
                 vmcommit(temp.join(" "));
             } else {
