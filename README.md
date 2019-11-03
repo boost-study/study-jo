@@ -24,4 +24,4 @@ Javascript study group with Boostcampers 📝
 
 ### 장소
 
-: 서울숲 베이스캠프 회의실 대관
+: 서울숲 베이스캠프 회의실 대관, 강남 베이스캠프 회의실 대관
